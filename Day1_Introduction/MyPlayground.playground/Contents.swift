@@ -8,4 +8,5 @@ print(str)
 
 str
 
+var age = 34
 
