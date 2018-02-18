@@ -14,38 +14,59 @@ acceleration = 9.8
 
 
 secondPersonName = "Davit"
+
 var personFirstName = "Nikoloz"
+
 var personSurname = "Lartsuliani"
+
 myAge = 30
+
 var myAgeInString = "30"
+
 Int(myAgeInString)              // მონაცემის ტიპის შეცვლა
+
 print("\(personFirstName) \(personSurname) is \(myAge) years old") //სხვადასხვა ტიპის მონაცემების String-ად ინტერპოლაცია
 
+
 var anotherInt: UInt            //Unsigned Int - მთელი დადებითი რიცხვის დეკლარირება
+
 var doubleNumber: Double
+
 var anotherDouble = Double()
 
+
 let number1 = 100
+
 var number2 = 6
 
+
 number2 = number2 + 1
+
 number2 += 2
+
 number2 -= 3
 
 
 number1 >= number2
+
 number2 > number1
+
 number2 <= number1
+
 number2 == number1
+
 number2 != number1
 
 print(number1%number2)
 
+
 //acceleration = 10
+
 
 personFirstName = "Bye, \nPlayground"
 
 print(personFirstName)
+
 print(personFirstName)
 
 
