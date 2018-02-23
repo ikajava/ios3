@@ -62,4 +62,50 @@ if !(personFirstName == "Nikoloz" || personSurname == "Lartsuliani")  {
 
 let (x,y,z) = (10,"11",20)
 
+var beconAge = 7
+var eggsAge = 2
+
+switch (beconAge, eggsAge) {
+case (8...Int.max,_): print("Throw a becon"); fallthrough
+case (_, 22...Int.max): print("Throw the eggs")
+default: print("Make an omlette")
+}
+
+var arrayOfStrings = [String]()
+
+arrayOfStrings.append("Suliko")
+arrayOfStrings.append("Suliko")
+arrayOfStrings.append("Irakli")
+arrayOfStrings.append("Suliko")
+arrayOfStrings.append("Irakli")
+arrayOfStrings.index(of: "Irakli")
+
+arrayOfStrings.capacity
+arrayOfStrings.count
+
+for item in arrayOfStrings {
+    print(item)
+}
+arrayOfStrings.forEach {
+    print($0)
+}
+
+var arrayOfIntegers = [10,2,3,6,7,15,21]
+for item in arrayOfIntegers {
+    if item % 2 == 0 {
+        print(arrayOfIntegers.index(of: item)!)
+    }
+}
+
+var setOfInteger = Set<Int>()
+setOfInteger.insert(10)
+setOfInteger.insert(8)
+setOfInteger.insert(9)
+setOfInteger.insert(10)
+print(setOfInteger.count)
+
+var airports = ["XYZ" : "London", "ABC": "A B C airport"]
+airports["XYZ"] = nil
+
+
 
