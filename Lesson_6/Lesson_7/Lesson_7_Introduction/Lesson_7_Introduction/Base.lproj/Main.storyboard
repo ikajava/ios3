@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="AvenirNext.ttc">
+            <string>AvenirNext-Medium</string>
+            <string>AvenirNext-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Lesson_7_Introduction" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="z7X-p6-apC">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="High Score: 27, User George" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w0s-3O-0Gb">
+                                <rect key="frame" x="6" y="140" width="363" height="33"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="24"/>
+                                <color key="textColor" name="DarkBrown"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bLb-zN-fHw">
+                                <rect key="frame" x="152" y="191" width="70" height="164"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="120"/>
+                                <color key="textColor" name="TextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i9m-lp-qA0" customClass="DesignableButton" customModule="Lesson_7_Introduction" customModuleProvider="target">
+                                <rect key="frame" x="115.5" y="363" width="144" height="55"/>
+                                <color key="backgroundColor" name="TextColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="144" id="rdy-8p-tfF"/>
+                                    <constraint firstAttribute="height" constant="55" id="rsK-if-5Q2"/>
+                                </constraints>
+                                <state key="normal" title="Tap Fast!"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Profile_picture" translatesAutoresizingMaskIntoConstraints="NO" id="YAS-Cj-AzM">
+                                <rect key="frame" x="24" y="587" width="56.5" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="YAS-Cj-AzM" secondAttribute="height" multiplier="1:1" id="WSm-oj-x38"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yxT-7d-OLm">
+                                <rect key="frame" x="201" y="482" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="George Michael" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eVD-av-pWg">
+                                <rect key="frame" x="100.5" y="604" width="205.5" height="38.5"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="28"/>
+                                <color key="textColor" name="TextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="z7X-p6-apC" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="7m4-rd-HLr"/>
+                            <constraint firstItem="bLb-zN-fHw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="95i-VQ-r2h"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="YAS-Cj-AzM" secondAttribute="bottom" constant="24" id="GgA-HL-tfw"/>
+                            <constraint firstItem="bLb-zN-fHw" firstAttribute="top" secondItem="w0s-3O-0Gb" secondAttribute="bottom" constant="18" id="HGX-fE-gAF"/>
+                            <constraint firstItem="YAS-Cj-AzM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="NEg-NU-qNC"/>
+                            <constraint firstItem="w0s-3O-0Gb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="6" id="NP5-hA-052"/>
+                            <constraint firstItem="eVD-av-pWg" firstAttribute="leading" secondItem="YAS-Cj-AzM" secondAttribute="trailing" constant="20" id="PFf-6k-VYV"/>
+                            <constraint firstItem="i9m-lp-qA0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Qfl-xe-3GE"/>
+                            <constraint firstItem="i9m-lp-qA0" firstAttribute="top" secondItem="bLb-zN-fHw" secondAttribute="bottom" constant="8" id="TGH-fi-I50"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="w0s-3O-0Gb" secondAttribute="trailing" constant="6" id="YMp-Vi-igj"/>
+                            <constraint firstItem="eVD-av-pWg" firstAttribute="bottom" secondItem="YAS-Cj-AzM" secondAttribute="bottom" id="bET-Sf-gfE"/>
+                            <constraint firstItem="z7X-p6-apC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="hpw-36-vLS"/>
+                            <constraint firstItem="YAS-Cj-AzM" firstAttribute="width" secondItem="z7X-p6-apC" secondAttribute="width" multiplier="0.15" id="nUY-tc-vHj"/>
+                            <constraint firstItem="z7X-p6-apC" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="uAw-bH-XPQ"/>
+                            <constraint firstItem="z7X-p6-apC" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ucl-dg-kpl"/>
+                            <constraint firstItem="w0s-3O-0Gb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="120" id="uy4-MU-O88"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="tapButton" destination="i9m-lp-qA0" id="aN8-OP-uQr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="141.59999999999999" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Profile_picture" width="48" height="48"/>
+        <image name="background" width="1125" height="2001"/>
+        <namedColor name="DarkBrown">
+            <color red="0.12300000339746475" green="0.076999999582767487" blue="0.059999998658895493" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TextColor">
+            <color red="0.94900000095367432" green="0.89099997282028198" blue="0.8410000205039978" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
