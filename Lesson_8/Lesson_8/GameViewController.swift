@@ -12,9 +12,11 @@ class GameViewController: UIViewController {
 
     var data: User?
     
+    @IBOutlet weak var tapCountLabel: UILabel!
+    @IBOutlet weak var remainedTimeLabel: UILabel!
+    @IBOutlet weak var highScoreLabel: UILabel!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var profilePicture: UIImageView!
-    @IBOutlet weak var dataLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,6 +27,11 @@ class GameViewController: UIViewController {
         }
         
     }
+    
+    @IBAction func tapButtonClick(_ sender: UIButton) {
+        
+    }
+    
 
    
 

@@ -161,35 +161,72 @@
                                     <constraint firstAttribute="height" constant="50" id="fdV-3P-5RM"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name Surname" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Zg-wW-ZSo">
-                                <rect key="frame" x="74" y="619.5" width="142" height="27.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name Surname 1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Zg-wW-ZSo">
+                                <rect key="frame" x="74" y="619.5" width="159" height="28"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
                                 <color key="textColor" red="0.90823972230000005" green="0.92638683320000004" blue="0.93171715740000005" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xM1-Hm-5NN">
-                                <rect key="frame" x="16" y="134" width="343" height="25.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="60" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xM1-Hm-5NN" userLabel="remainingTimeLabel">
+                                <rect key="frame" x="16" y="134" width="343" height="26"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <color key="textColor" red="0.90823972225189209" green="0.92638683319091797" blue="0.9317171573638916" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a4a-R9-RPq" userLabel="remainingTimeLabel">
+                                <rect key="frame" x="16" y="190" width="343" height="57.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="48"/>
+                                <color key="textColor" red="0.90823972230000005" green="0.92638683320000004" blue="0.93171715740000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mJy-eX-zT6">
+                                <rect key="frame" x="109" y="277.5" width="156" height="61"/>
+                                <color key="backgroundColor" red="0.90823972225189209" green="0.92638683319091797" blue="0.9317171573638916" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="61" id="Qma-Ox-d5f"/>
+                                    <constraint firstAttribute="width" constant="156" id="VhX-kw-nf5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="28"/>
+                                <state key="normal" title="Tap">
+                                    <color key="titleColor" red="0.85043728351593018" green="0.21816034615039825" blue="0.15920260548591614" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="tapButtonClick:" destination="Gga-3Q-8AP" eventType="touchUpInside" id="neT-oR-14y"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="High Score:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bv1-Wv-Npz" userLabel="remainingTimeLabel">
+                                <rect key="frame" x="16" y="81" width="343" height="26"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <color key="textColor" red="0.90823972230000005" green="0.92638683320000004" blue="0.93171715740000005" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="0.36640524864196777" green="0.26886916160583496" blue="0.19119572639465332" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="mJy-eX-zT6" firstAttribute="centerX" secondItem="em1-0V-kf0" secondAttribute="centerX" id="0XK-TS-1aa"/>
                             <constraint firstItem="VUd-YE-YtJ" firstAttribute="bottom" secondItem="Gmu-sX-ubd" secondAttribute="bottom" constant="20" id="3Jv-GR-Xok"/>
+                            <constraint firstItem="VUd-YE-YtJ" firstAttribute="trailing" secondItem="a4a-R9-RPq" secondAttribute="trailing" constant="16" id="D6r-EJ-i3I"/>
+                            <constraint firstItem="a4a-R9-RPq" firstAttribute="leading" secondItem="VUd-YE-YtJ" secondAttribute="leading" constant="16" id="I44-AU-4Zd"/>
+                            <constraint firstItem="a4a-R9-RPq" firstAttribute="top" secondItem="xM1-Hm-5NN" secondAttribute="bottom" constant="30" id="J0t-Oe-iId"/>
                             <constraint firstItem="Gmu-sX-ubd" firstAttribute="leading" secondItem="VUd-YE-YtJ" secondAttribute="leading" constant="16" id="Th9-6S-LI4"/>
+                            <constraint firstItem="mJy-eX-zT6" firstAttribute="top" secondItem="a4a-R9-RPq" secondAttribute="bottom" constant="30" id="Utp-g5-fkB"/>
+                            <constraint firstItem="VUd-YE-YtJ" firstAttribute="trailing" secondItem="Bv1-Wv-Npz" secondAttribute="trailing" constant="16" id="UvB-Hw-UY8"/>
                             <constraint firstItem="xM1-Hm-5NN" firstAttribute="top" secondItem="VUd-YE-YtJ" secondAttribute="top" constant="70" id="Wqe-JB-dXW"/>
                             <constraint firstItem="3Zg-wW-ZSo" firstAttribute="leading" secondItem="Gmu-sX-ubd" secondAttribute="trailing" constant="8" id="WvH-Qs-6cp"/>
                             <constraint firstItem="3Zg-wW-ZSo" firstAttribute="bottom" secondItem="Gmu-sX-ubd" secondAttribute="bottom" id="YfE-RQ-VYL"/>
+                            <constraint firstItem="Bv1-Wv-Npz" firstAttribute="leading" secondItem="VUd-YE-YtJ" secondAttribute="leading" constant="16" id="afW-Jx-Xbv"/>
+                            <constraint firstItem="Bv1-Wv-Npz" firstAttribute="top" secondItem="VUd-YE-YtJ" secondAttribute="top" constant="17" id="b7R-Y3-M6g"/>
                             <constraint firstItem="VUd-YE-YtJ" firstAttribute="trailing" secondItem="xM1-Hm-5NN" secondAttribute="trailing" constant="16" id="c18-er-Vr8"/>
                             <constraint firstItem="xM1-Hm-5NN" firstAttribute="leading" secondItem="VUd-YE-YtJ" secondAttribute="leading" constant="16" id="qAc-mq-i8X"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="VUd-YE-YtJ"/>
                     </view>
                     <connections>
-                        <outlet property="dataLabel" destination="xM1-Hm-5NN" id="CdL-jn-0Ac"/>
+                        <outlet property="highScoreLabel" destination="Bv1-Wv-Npz" id="3sW-4J-bYG"/>
                         <outlet property="nameLabel" destination="3Zg-wW-ZSo" id="M1q-fx-pPO"/>
                         <outlet property="profilePicture" destination="Gmu-sX-ubd" id="9io-dg-sTy"/>
+                        <outlet property="remainedTimeLabel" destination="xM1-Hm-5NN" id="PU4-CP-Ovs"/>
+                        <outlet property="tapCountLabel" destination="a4a-R9-RPq" id="jb9-k2-Hur"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="72o-NQ-ZqX" userLabel="First Responder" sceneMemberID="firstResponder"/>

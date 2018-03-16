@@ -16,6 +16,7 @@
 		E7B30E5620597FA6003FB520 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B30E5520597FA6003FB520 /* GameViewController.swift */; };
 		E7B30E582059903A003FB520 /* DesignableImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B30E572059903A003FB520 /* DesignableImageView.swift */; };
 		E7B30E5A20599122003FB520 /* user.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B30E5920599122003FB520 /* user.swift */; };
+		E7B30E5C205B0AD7003FB520 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B30E5B205B0AD7003FB520 /* Game.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		E7B30E5520597FA6003FB520 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		E7B30E572059903A003FB520 /* DesignableImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableImageView.swift; sourceTree = "<group>"; };
 		E7B30E5920599122003FB520 /* user.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = user.swift; sourceTree = "<group>"; };
+		E7B30E5B205B0AD7003FB520 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				E7B30E43205974A6003FB520 /* ViewController.swift */,
 				E7B30E572059903A003FB520 /* DesignableImageView.swift */,
 				E7B30E5920599122003FB520 /* user.swift */,
+				E7B30E5B205B0AD7003FB520 /* Game.swift */,
 			);
 			path = Lesson_8;
 			sourceTree = "<group>";
@@ -150,6 +153,7 @@
 			files = (
 				E7B30E5620597FA6003FB520 /* GameViewController.swift in Sources */,
 				E7B30E582059903A003FB520 /* DesignableImageView.swift in Sources */,
+				E7B30E5C205B0AD7003FB520 /* Game.swift in Sources */,
 				E7B30E5A20599122003FB520 /* user.swift in Sources */,
 				E7B30E44205974A6003FB520 /* ViewController.swift in Sources */,
 				E7B30E42205974A6003FB520 /* AppDelegate.swift in Sources */,
