@@ -10,7 +10,11 @@ import UIKit
 
 class GameViewController: UIViewController {
 
-    var data: User?
+    var name: String?
+    
+//    let arrayOfColors: UIColor = [#colorLiteral(red: 0.9372549057, green: 0.3490196168, blue: 0.1921568662, alpha: 1), #colorLiteral(red: 0.4666666687, green: 0.7647058964, blue: 0.2666666806, alpha: 1), #colorLiteral(red: 0.8078431487, green: 0.02745098062, blue: 0.3333333433, alpha: 1)]
+    
+    let picture = #imageLiteral(resourceName: "Profile_picture")
     
     @IBOutlet weak var tapCountLabel: UILabel!
     @IBOutlet weak var remainedTimeLabel: UILabel!
@@ -20,11 +24,7 @@ class GameViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        if let data = data {
-            
-            profilePicture.image = data.profilePicture
-            nameLabel.text = data.name
-        }
+        nameLabel.text = name
         
     }
     

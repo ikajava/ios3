@@ -43,5 +43,7 @@
 	</array>
 	<key>NSCameraUsageDescription</key>
 	<string>Because we can!</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>ksjal kjask d</string>
 </dict>
 </plist>
