@@ -1,0 +1,27 @@
+[
+{
+ "name": "Barbarestan",
+ "imageName": "barbarestan",
+ "location": "D. Aghmashenebeli ave. 132",
+ "type": "Georgian"
+ },
+ {
+ "name": "Funicular Complex",
+ "imageName": "funicular",
+ "location": "Funicular Tbilisi",
+ "type": "Georgian"
+ },
+ {
+ "name": "Hard Rock Cafe",
+ "imageName": "hard_rock_cafe",
+ "location": "1 Vasil Petriashvili Street",
+ "type": "US American"
+ },
+ {
+ "name": "Le Marais",
+ "imageName": "la_marais",
+ "location": "Irakli Abashidze Street",
+ "type": "French"
+ }
+ ]
+ 

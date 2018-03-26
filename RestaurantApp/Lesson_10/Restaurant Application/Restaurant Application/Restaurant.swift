@@ -8,16 +8,17 @@
 
 import Foundation
 
-class Restaurant {
+class Restaurant: Decodable {
     var name: String
     var imageName: String
-    var location: String
     var type: String
+    
+    var latitude: Double?
+    var longitude: Double?
 
-    init(name: String, imageName: String, location: String, type: String) {
+    init(name: String, imageName: String, type: String) {
         self.name = name
         self.imageName = imageName
-        self.location = location
         self.type = type
     }
 }

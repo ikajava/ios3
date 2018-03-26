@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AECDB83B206532750082ECB5 /* restaurant.json in Resources */ = {isa = PBXBuildFile; fileRef = AECDB83A206532740082ECB5 /* restaurant.json */; };
+		AECDB83E2065419F0082ECB5 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AECDB83D2065419F0082ECB5 /* CoreLocation.framework */; };
 		E745B6F22062CD07002917D9 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E745B6F12062CD07002917D9 /* AddViewController.swift */; };
 		E745B6F42062CD5A002917D9 /* protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = E745B6F32062CD5A002917D9 /* protocols.swift */; };
 		E769E97720600CC300FE8DE5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E769E97620600CC300FE8DE5 /* AppDelegate.swift */; };
@@ -20,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AECDB83A206532740082ECB5 /* restaurant.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = restaurant.json; sourceTree = "<group>"; };
+		AECDB83D2065419F0082ECB5 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		E745B6F12062CD07002917D9 /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
 		E745B6F32062CD5A002917D9 /* protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = protocols.swift; sourceTree = "<group>"; };
 		E769E97320600CC300FE8DE5 /* Restaurant Application.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Restaurant Application.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -39,17 +43,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AECDB83E2065419F0082ECB5 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AECDB83C2065419E0082ECB5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AECDB83D2065419F0082ECB5 /* CoreLocation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E769E96A20600CC300FE8DE5 = {
 			isa = PBXGroup;
 			children = (
 				E769E97520600CC300FE8DE5 /* Restaurant Application */,
 				E769E97420600CC300FE8DE5 /* Products */,
+				AECDB83C2065419E0082ECB5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -75,6 +89,7 @@
 				E769E98C206029DB00FE8DE5 /* Restaurant.swift */,
 				E745B6F12062CD07002917D9 /* AddViewController.swift */,
 				E745B6F32062CD5A002917D9 /* protocols.swift */,
+				AECDB83A206532740082ECB5 /* restaurant.json */,
 			);
 			path = "Restaurant Application";
 			sourceTree = "<group>";
@@ -138,6 +153,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AECDB83B206532750082ECB5 /* restaurant.json in Resources */,
 				E769E98120600CC300FE8DE5 /* LaunchScreen.storyboard in Resources */,
 				E769E97E20600CC300FE8DE5 /* Assets.xcassets in Resources */,
 				E769E97C20600CC300FE8DE5 /* Main.storyboard in Resources */,

@@ -10,5 +10,5 @@ import UIKit
 
 
 protocol DataReceivable {
-    func updateWithReceivedData(resName: String, resImage: String, resLocation: String, resType: String )
+    func updateWithReceivedData(restaurant: Restaurant)
 }
